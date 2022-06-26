@@ -2112,9 +2112,10 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/bsstrainer.lua"))()
 		end)
 
-		Tab:AddButton("Greenville.", function()
-			loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/typical-overk1ll/scripts/main/Greenville", true))()"))()
-		end)
+		local Folder = Tab:AddFolder("test") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddLabel("yes")
+		local Folder2 = Folder:AddFolder("?")
+		Folder2:AddLabel("Woo!")
 
 	end
 
